@@ -65,7 +65,7 @@ class Modal extends Component {
                 <div className="button-wrap">
                   <button type="submit">
                     <p>
-                      <strong>메모 추가하기</strong>
+                      <strong>메모 추가히기</strong>
                     </p>
                   </button>
                 </div>

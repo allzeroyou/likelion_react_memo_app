@@ -21,7 +21,7 @@ class ReModal extends Component {
   handleChange = (event) => {
     const {
       target: { name, value },
-    } = event; //ºñ±¸Á¶È­ ÇÒ´ç(name°ú value, key°¡ »ı·«ÀÌ µÈ °ÍÀÓ)
+    } = event;
     this.setState({ [name]: value });
   };
   handleUpdate = (event) => {
@@ -53,17 +53,17 @@ class ReModal extends Component {
 
     return (
       <React.Fragment>
-        {reOpen ? ( //ÂüÀÏ¶§ ¾Æ·¡ ÄÚµå ½ÇÇà!
+        {reOpen ? (
           <React.Fragment>
             <div className="Modal-verlay" onClick={reclose} />
             <div className="Modal">
-              <h1 className="title">¸Ş¸ğ¸¦ ±â·ÏÇÏ¼¼¿ä!</h1>
+              <h1 className="title">ì œëª©ì„ ì…ë ¥í•˜ì„¸ìš”.</h1>
               <form onSubmit={this.handleUpdate}>
                 <div className="content">
                   <h4>
                     <input
                       type="text"
-                      placeholder="¾ÆÀÌµğ¸¦ ÀÔ·ÂÇÏ¼¼¿ä."
+                      placeholder="ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš”."
                       name="author"
                       value={this.state.author}
                       onChange={this.handleChange}
@@ -73,7 +73,7 @@ class ReModal extends Component {
                   <h4>
                     <input
                       type="text"
-                      placeholder="Á¦¸ñÀ» ÀÔ·ÂÇÏ¼¼¿ä."
+                      placeholder="ì œëª©ì„ ì…ë ¥í•˜ì„¸ìš”."
                       name="title"
                       value={this.state.title}
                       onChange={this.handleChange}
@@ -88,12 +88,12 @@ class ReModal extends Component {
                 <div className="button-wrap">
                   <button type="submit">
                     <p>
-                      <strong>¼öÁ¤ÇÏ±â</strong>
+                      <strong>ìˆ˜ì •í•˜ê¸°</strong>
                     </p>
                   </button>
                   <button type="button" onClick={this.handleRemove}>
                     <p>
-                      <strong>»èÁ¦ÇÏ±â</strong>
+                      <strong>ì‚­ì œí•˜ê¸°</strong>
                     </p>
                   </button>
                 </div>
